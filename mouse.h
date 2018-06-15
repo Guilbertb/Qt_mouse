@@ -9,12 +9,17 @@ class mouse : public QWidget
 public:
     explicit mouse(QWidget *parent = 0);
 
+protected:
+    int cx;
+    int cy;
+
 signals:
 
 public slots:
 
 protected slots:
-    void mousePressEvent(QMouseEvent *);
+    void mouseMoveEvent(QMouseEvent *);
+    void paintEvent(QPaintEvent *);
 };
 
 #endif // MOUSE_H

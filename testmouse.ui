@@ -14,16 +14,11 @@
    <string>testMouse</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="mouse" name="zone" native="true">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>30</y>
-      <width>191</width>
-      <height>161</height>
-     </rect>
-    </property>
-   </widget>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="mouse" name="zone" native="true"/>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
